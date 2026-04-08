@@ -118,7 +118,7 @@
       </div>
     </div>
 
-    <a class="back-link" href="https://aymanyounis.github.io/mygoldfolio-privacy/">← Privacy Policy</a>
+    <a class="back-link" href="/privacy/">← Privacy Policy</a>
 
     <h1>Changelog</h1>
     <p class="subtitle">Release notes for every version of MyGoldFolio</p>
@@ -126,6 +126,22 @@
     <!-- ═══════════════════════════════════════════════════════════
          STORE RELEASES — add new entries here, newest first
          ═══════════════════════════════════════════════════════════ -->
+
+    <div class="version-block">
+      <div class="version-header">
+        <span class="version-number">v2.1.0</span>
+        <span class="version-date">April 2026</span>
+      </div>
+      <ul>
+        <li>Firebase Analytics integration (consent-gated): screen views + feature events + app open counts; no holdings, prices, amounts, or personal profile data are sent</li>
+        <li>Post-onboarding consent sheet added; analytics stays disabled until explicit opt-in</li>
+        <li>Settings privacy control: Share usage data toggle allows immediate opt-out at any time</li>
+        <li>Rating pre-prompt added with eligibility guardrails (minimum app opens + cooldown) and actions: Rate now / Not now / Don’t ask again</li>
+        <li>“Not really” path from rating prompt routes users to in-app feedback page</li>
+        <li>Store schema updated to v18 with new fields: analyticsConsent, ratingPromptStatus, ratingPromptLastShown, appOpenCount</li>
+        <li>Play Console Data Safety updated for optional app-activity analytics collection via Firebase</li>
+      </ul>
+    </div>
 
     <div class="version-block">
       <div class="version-header">
@@ -892,7 +908,7 @@
     </div><!-- /pre-section -->
 
     <hr class="divider" />
-    <p class="footer">© 2026 MyGoldFolio · <a href="https://aymanyounis.github.io/mygoldfolio-privacy/">Privacy Policy</a></p>
+    <p class="footer">© 2026 MyGoldFolio · <a href="/privacy/">Privacy Policy</a></p>
 
   </div>
 

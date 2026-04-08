@@ -29,7 +29,9 @@
       { "@type": "Question", "name": "How is my P&L calculated?", "acceptedAnswer": { "@type": "Answer", "text": "P&L compares what you would receive if you sold now (spot price minus sell margin, times your grams) against what you originally paid. It accounts for your actual purchase cost and the dealer's sell-side spread." }},
       { "@type": "Question", "name": "How do I back up my data?", "acceptedAnswer": { "@type": "Answer", "text": "Go to Settings, open Export & Backup, and tap Backup. You can save the JSON file to your device or share it. To restore, tap Import Backup and select a previously saved file." }},
       { "@type": "Question", "name": "What types of alerts are available?", "acceptedAnswer": { "@type": "Answer", "text": "Price alerts trigger when spot crosses a threshold. Milestone alerts fire once when your portfolio value hits a target. P&L watchers notify you when your net profit or loss swings beyond a set amount. Goal alerts fire when you reach your gram or P&L targets." }},
-      { "@type": "Question", "name": "How does the tax-free countdown work?", "acceptedAnswer": { "@type": "Answer", "text": "Each holding tracks how many days since purchase. Once the holding period exceeds your configured tax-free threshold (default 365 days), it is marked as tax-free. The countdown shows exactly how many days remain." }}
+      { "@type": "Question", "name": "How does the tax-free countdown work?", "acceptedAnswer": { "@type": "Answer", "text": "Each holding tracks how many days since purchase. Once the holding period exceeds your configured tax-free threshold (default 365 days), it is marked as tax-free. The countdown shows exactly how many days remain." }},
+      { "@type": "Question", "name": "Does MyGoldFolio collect my data?", "acceptedAnswer": { "@type": "Answer", "text": "Only if you explicitly opt in. If you consent, anonymous usage data such as screens visited and feature usage may be collected. No holdings, portfolio values, prices, or personal information are collected." }},
+      { "@type": "Question", "name": "How do I turn off usage data sharing?", "acceptedAnswer": { "@type": "Answer", "text": "Go to Settings, open the Privacy section, and turn off Share usage data. The change takes effect immediately." }}
     ]
   }
   </script>
@@ -66,6 +68,7 @@
       <a href="#goals" class="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-border/30 text-muted hover:text-gold hover:border-gold/40 transition">Goals</a>
       <a href="#simulators" class="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-border/30 text-muted hover:text-gold hover:border-gold/40 transition">Simulators</a>
       <a href="#backup" class="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-border/30 text-muted hover:text-gold hover:border-gold/40 transition">Backup</a>
+      <a href="#privacy-data" class="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-border/30 text-muted hover:text-gold hover:border-gold/40 transition">Privacy &amp; Data</a>
       <a href="#security" class="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-border/30 text-muted hover:text-gold hover:border-gold/40 transition">Security</a>
       <a href="#purity" class="flex-shrink-0 text-xs font-semibold px-3 py-1.5 rounded-full border border-border/30 text-muted hover:text-gold hover:border-gold/40 transition">Purity</a>
     </div>
@@ -656,6 +659,33 @@
             <ion-icon name="chevron-down-outline" class="text-muted transition-transform duration-200 group-open:rotate-180 flex-shrink-0" style="font-size:16px;"></ion-icon>
           </summary>
           <p class="px-5 pb-4 text-sm text-gray-400 leading-relaxed">Three CSV exports are available: <strong class="text-gray-200">Price History</strong> (spot prices over time with buy/sell rates), <strong class="text-gray-200">Portfolio</strong> (all holdings and sell events with cost, purity, and margin profile), and <strong class="text-gray-200">Tax Report</strong> (sell allocations with acquisition dates, holding periods, and tax status). Each can be saved to device or shared.</p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ─── Privacy & Data ─────────────────────────────────── -->
+    <section id="privacy-data" class="mb-12 scroll-mt-24">
+      <div class="flex items-center gap-2 mb-4">
+        <ion-icon name="shield-checkmark-outline" class="text-gold" style="font-size:18px;"></ion-icon>
+        <h2 class="text-sm font-bold text-gold uppercase tracking-wide">Privacy &amp; Data</h2>
+      </div>
+      <div class="space-y-3">
+
+        <details class="bg-navy-light/60 border border-border/20 rounded-xl group">
+          <summary class="flex items-center justify-between px-5 py-4 font-semibold text-sm text-gray-200 hover:text-gold transition select-none">
+            Does MyGoldFolio collect my data?
+            <ion-icon name="chevron-down-outline" class="text-muted transition-transform duration-200 group-open:rotate-180 flex-shrink-0" style="font-size:16px;"></ion-icon>
+          </summary>
+          <p class="px-5 pb-4 text-sm text-gray-400 leading-relaxed">Only if you explicitly opt in during first launch (or later in Settings). If you consent, anonymous usage data is shared, such as screens visited and features used. No financial data, no holdings, no portfolio values, and no personal information is collected.</p>
+        </details>
+
+        <details class="bg-navy-light/60 border border-border/20 rounded-xl group">
+          <summary class="flex items-center justify-between px-5 py-4 font-semibold text-sm text-gray-200 hover:text-gold transition select-none">
+            How do I turn off usage data sharing?
+            <ion-icon name="chevron-down-outline" class="text-muted transition-transform duration-200 group-open:rotate-180 flex-shrink-0" style="font-size:16px;"></ion-icon>
+          </summary>
+          <p class="px-5 pb-4 text-sm text-gray-400 leading-relaxed">Go to <strong class="text-gray-200">Settings → Privacy</strong> and toggle off <strong class="text-gray-200">Share usage data</strong>. This takes effect immediately.</p>
         </details>
 
       </div>
