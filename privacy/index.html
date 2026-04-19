@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2Y9RHH0QC"></script>
   <script>
@@ -10,10 +10,23 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — MyGoldFolio</title>
-  <meta name="description" content="MyGoldFolio privacy policy. Portfolio data is stored on-device. Optional anonymous usage analytics are disabled by default and require explicit consent." />
+  <title>Privacy — MyGoldFolio</title>
+  <meta name="description" content="MyGoldFolio privacy model: on-device portfolio data with optional anonymous analytics only by consent." />
+  <meta property="og:title" content="Privacy — MyGoldFolio" />
+  <meta property="og:description" content="How MyGoldFolio handles data, analytics, and exports." />
+  <meta property="og:image" content="/images/mgf-v3-og-en.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy — MyGoldFolio" />
+  <meta name="twitter:description" content="How MyGoldFolio handles data, analytics, and exports." />
+  <meta name="twitter:image" content="/images/mgf-v3-og-en.png" />
   <link rel="icon" href="/images/icon.png" />
   <link rel="canonical" href="https://mygoldfolio.de/privacy/" />
+  <link rel="alternate" hreflang="en" href="https://mygoldfolio.de/privacy/" />
+  <link rel="alternate" hreflang="de" href="https://mygoldfolio.de/de/privacy/" />
+  <link rel="alternate" hreflang="tr" href="https://mygoldfolio.de/tr/privacy/" />
+  <link rel="alternate" hreflang="fr" href="https://mygoldfolio.de/fr/privacy/" />
+  <link rel="alternate" hreflang="x-default" href="https://mygoldfolio.de/privacy/" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -23,9 +36,9 @@
           colors: {
             navy: '#0F0F1A',
             'navy-light': '#1A1A2E',
-            card: '#16213E',
             border: '#1E3A5C',
             gold: '#D4A843',
+            mint: '#00D68F',
             muted: '#666677',
           }
         }
@@ -33,117 +46,82 @@
     }
   </script>
   <style>
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
   </style>
 </head>
-<body class="bg-navy text-gray-200 min-h-screen">
+<body class="bg-navy text-gray-200 min-h-screen flex flex-col">
 
-  <!-- Nav -->
-  <nav class="border-b border-border/30 backdrop-blur-sm bg-navy/80 sticky top-0 z-50">
-    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="https://smartdailyapps.com" class="text-lg font-extrabold text-white"><span class="text-gold">Smart</span>DailyApps</a>
-      <a href="/" class="text-sm text-gray-400 hover:text-gold transition">← My<span class="text-gold">Gold</span>Folio</a>
+  <nav class="border-b border-border/30 backdrop-blur-sm bg-navy/85 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-lg font-extrabold text-white">My<span class="text-[#E2B84B]">Gold</span>Folio</a>
+      <a href="/" class="text-sm text-gray-400 hover:text-gold transition">← Home</a>
     </div>
   </nav>
 
-  <main class="max-w-3xl mx-auto px-6 py-12">
+  <main class="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
+    <div class="mb-9 text-center">
+      <p class="text-xs font-bold tracking-[0.22em] text-gold uppercase mb-3">Privacy</p>
+      <h1 class="text-3xl md:text-4xl font-black text-white mb-3">Your Portfolio, Your Device</h1>
+      <p class="text-sm text-gray-400 max-w-2xl mx-auto">MyGoldFolio is designed around local-first data ownership. No account required.</p>
+    </div>
 
-    <!-- Header -->
-    <div class="flex items-center gap-4 mb-10 pb-8 border-b border-border/20">
-      <img src="/images/icon.png" alt="MyGoldFolio" class="w-14 h-14 rounded-xl" />
-      <div>
-        <span class="text-xl font-extrabold text-white">My<span class="text-gold">Gold</span>Folio</span>
-        <p class="text-xs text-muted">Gold investment tracker · Android</p>
+    <div class="grid md:grid-cols-2 gap-4 mb-8">
+      <div class="rounded-xl border border-mint/35 bg-mint/10 p-5">
+        <p class="text-xs font-bold tracking-wide uppercase text-mint mb-2">What Is Never Collected</p>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>Holdings and portfolio values</li>
+          <li>Purchase amounts and sell records</li>
+          <li>Personal profile or account identity</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-gold/30 bg-gold/10 p-5">
+        <p class="text-xs font-bold tracking-wide uppercase text-gold mb-2">What Is Optional</p>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li>Anonymous usage analytics</li>
+          <li>Enabled only with explicit consent</li>
+          <li>Can be turned off anytime in Settings</li>
+        </ul>
       </div>
     </div>
 
-    <h1 class="text-3xl font-black text-white mb-2">Privacy Policy</h1>
-    <p class="text-sm text-muted mb-8">Effective date: April 2026</p>
-
-    <!-- Badges -->
-    <div class="flex flex-wrap gap-2 mb-8">
-      <span class="text-xs bg-navy-light border border-border/30 px-3 py-1.5 rounded-full text-gray-300 flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>Opt-in analytics only
-      </span>
-      <span class="text-xs bg-navy-light border border-border/30 px-3 py-1.5 rounded-full text-gray-300 flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>Portfolio data on-device
-      </span>
-      <span class="text-xs bg-navy-light border border-border/30 px-3 py-1.5 rounded-full text-gray-300 flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>No accounts required
-      </span>
-      <span class="text-xs bg-navy-light border border-border/30 px-3 py-1.5 rounded-full text-gray-300 flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>No ads
-      </span>
-    </div>
-
-    <div class="bg-navy-light border-l-4 border-gold rounded-r-lg p-5 mb-10 text-sm text-gray-400 leading-relaxed">
-      My<span class="text-gold font-semibold">Gold</span>Folio stores portfolio data on your device. Optional anonymous usage analytics are off by default and only activate if you explicitly opt in.
-    </div>
-
-    <hr class="border-border/20 mb-10" />
-
-    <!-- Sections -->
-    <div class="space-y-8">
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Portfolio Data Storage</h2>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">All portfolio information you enter — holdings, purchase dates, costs, and notes — is stored locally on your device.</p>
-        <p class="text-sm text-gray-400 leading-relaxed">My<span class="text-gold">Gold</span>Folio does not send your holdings, financial values, or personal profile data to our servers. Data leaves your device only when you explicitly export or share a backup file.</p>
+    <div class="space-y-6">
+      <section class="rounded-xl border border-border/30 bg-navy-light/50 p-5">
+        <h2 class="text-sm font-bold text-gold uppercase tracking-wide mb-2">On-Device Storage</h2>
+        <p class="text-sm text-gray-400 leading-relaxed">Portfolio data is stored locally on your device. MyGoldFolio does not upload holdings or financial records to SmartDailyApps servers.</p>
       </section>
 
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Usage Analytics</h2>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">Usage analytics are disabled by default and only enabled after explicit in-app consent. If enabled, analytics are limited to anonymous app usage signals such as screen views, feature interaction events, and app open counts.</p>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">No holdings data, no prices, no purchase amounts, and no personally identifying information are sent through analytics.</p>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">Analytics processing is provided by Google Firebase Analytics (Google LLC, USA). See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-gold hover:underline">Google Privacy Policy</a>.</p>
-        <p class="text-sm text-gray-400 leading-relaxed">Firebase Analytics retention is configured to 14 months. You can withdraw consent at any time in Settings → Privacy → Share usage data. For EU users, consent can be withdrawn at any time and no analytics data is collected before consent is granted.</p>
+      <section class="rounded-xl border border-border/30 bg-navy-light/50 p-5">
+        <h2 class="text-sm font-bold text-gold uppercase tracking-wide mb-2">Exports & Backups</h2>
+        <p class="text-sm text-gray-400 leading-relaxed">Backup and export files are created only when you request them. Data leaves your device only when you explicitly share or save those files externally.</p>
       </section>
 
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">App Store Reviews</h2>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">My<span class="text-gold">Gold</span>Folio may show a rating prompt using the official Google Play in-app review flow.</p>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">No review interaction data is collected or stored by MyGoldFolio from this prompt.</p>
-        <p class="text-sm text-gray-400 leading-relaxed">The prompt state (for example, “Not now” or “Don’t ask again”) is stored locally on-device only to respect your choice.</p>
+      <section class="rounded-xl border border-border/30 bg-navy-light/50 p-5">
+        <h2 class="text-sm font-bold text-gold uppercase tracking-wide mb-2">Price Data Requests</h2>
+        <p class="text-sm text-gray-400 leading-relaxed">To show live gold prices, the app queries third-party price APIs. These requests are for market data retrieval and do not include your holdings details.</p>
       </section>
 
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Price Data</h2>
-        <p class="text-sm text-gray-400 leading-relaxed mb-2">To display live gold prices, the app makes requests to third-party price APIs. These requests contain no personal information — only a price query for gold in EUR. Please refer to each provider's own privacy policy for their data practices.</p>
+      <section class="rounded-xl border border-border/30 bg-navy-light/50 p-5">
+        <h2 class="text-sm font-bold text-gold uppercase tracking-wide mb-2">Consent Control</h2>
+        <p class="text-sm text-gray-400 leading-relaxed">Analytics consent is explicit and reversible. You can withdraw consent at any time from within the app settings.</p>
       </section>
 
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Notifications</h2>
-        <p class="text-sm text-gray-400 leading-relaxed">The app can send local notifications for price alerts, tax-free dates, and milestones. These are generated entirely on your device. No notification data is sent to any server.</p>
-      </section>
-
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Backups &amp; Exports</h2>
-        <p class="text-sm text-gray-400 leading-relaxed">JSON backups and CSV exports are saved directly to your device storage. The developer has no access to these files.</p>
-      </section>
-
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Diagnostics</h2>
-        <p class="text-sm text-gray-400 leading-relaxed">Any crash logs are stored on-device only and are visible to you via the App Info screen. Nothing is transmitted automatically.</p>
-      </section>
-
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Children</h2>
-        <p class="text-sm text-gray-400 leading-relaxed">This app is not directed at children under 13 and does not knowingly collect data from them.</p>
-      </section>
-
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Changes to This Policy</h2>
-        <p class="text-sm text-gray-400 leading-relaxed">If this policy is updated, the new version will be published at this URL with a revised effective date.</p>
-      </section>
-
-      <section>
-        <h2 class="text-xs font-bold tracking-[0.15em] text-gold uppercase mb-3">Contact</h2>
-        <p class="text-sm text-gray-400 leading-relaxed">For questions about this policy: <a href="mailto:info@mygoldfolio.de" class="text-gold hover:underline">info@mygoldfolio.de</a></p>
+      <section class="rounded-xl border border-border/30 bg-navy-light/50 p-5">
+        <h2 class="text-sm font-bold text-gold uppercase tracking-wide mb-2">Contact</h2>
+        <p class="text-sm text-gray-400 leading-relaxed">Questions about privacy? Contact <a href="mailto:info@mygoldfolio.de" class="text-gold hover:underline">info@mygoldfolio.de</a>.</p>
       </section>
     </div>
-
-    <hr class="border-border/20 my-10" />
-    <p class="text-center text-xs text-muted">&copy; 2026 MyGoldFolio · All rights reserved</p>
   </main>
 
+  <footer class="border-t border-border/20 py-8 px-6">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted">
+      <p>&copy; 2026 Smart<span class="bg-gradient-to-r from-[#c6b6ff] via-[#8f73ff] to-[#6a4dff] bg-clip-text text-transparent">Daily</span>Apps</p>
+      <div class="flex gap-6">
+        <a href="/help/" class="hover:text-gold transition">Help</a>
+        <a href="/press/" class="hover:text-gold transition">Press</a>
+        <a href="/feedback/" class="hover:text-gold transition">Feedback</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/images/locale-switcher.js"></script>
 </body>
 </html>
